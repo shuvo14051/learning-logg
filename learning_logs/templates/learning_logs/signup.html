@@ -1,0 +1,22 @@
+{% extends 'learning_logs/base.html' %}
+
+{% block header %}
+Sign Up
+{% endblock header %}
+
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-3">
+
+    </div>
+    <div class="col-lg-6">
+        <form action="" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-block btn-success">Sign up</button>
+        </form>
+        <br>
+    </div>
+</div>
+{% endblock content %}
